@@ -286,6 +286,14 @@ class FontVariables
 				"unbatang" => [/* Korean */
 					'R' => "UnBatang_0613.ttf",
 				],
+				"calibri" => array (
+						'R' => 'calibri.ttf',
+						'B' => 'calibrib.ttf',
+						'I' => 'calibrii.ttf',
+					  ),
+				"calibrib" => array (
+						'R' => 'calibrib.ttf',
+					  ),
 			],
 
 			// Add fonts to this array if they contain characters in the SIP or SMP Unicode planes
