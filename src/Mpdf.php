@@ -3884,6 +3884,10 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 			$regenerate = true;
 		} // mPDF 6
 
+		if (!$this->fontCache->has($fontkey . '.cw.dat') || !$this->fontCache->has($fontkey . '.gid.dat')) {
+			$regenerate = true;
+		}
+
 		if (empty($font['name']) || $font['originalsize'] != $ttfstat['size'] || $regenerate) {
 			$generator = new MetricsGenerator($this->fontCache, $this->fontDescriptor);
 
